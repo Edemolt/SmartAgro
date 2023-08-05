@@ -1,0 +1,9 @@
+html{
+  background-image: url('./resources/pic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keep the background image static */
+  width: 100vw; /* Adjust as needed */
+  height: 100vh; /* Adjust as needed */
+  overflow: hidden; /* Hide the overflowing content outside this container */
+} 

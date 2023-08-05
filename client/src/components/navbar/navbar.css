@@ -1,0 +1,135 @@
+.NavBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 10px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fff;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    position: fixed;
+    top : 6%   ;
+    /* left : 0; */
+    right: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        box-shadow: 0 0 20px #ccc;
+        transform: scale(1.01);
+    }
+    @media (max-width: 768px) {
+        width: 10%;
+        height: 10%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        &:hover{
+            box-shadow: none;
+            transform: none;
+        }
+    }
+}
+
+.NavBarText{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+}
+
+
+.NavBar:hover{
+    cursor:pointer;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 10px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #000000;
+    width: 100%;
+    height: 5%;
+    overflow: hidden;
+    position: fixed;
+    top : 0;
+    /* left : 0; */
+    right: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        box-shadow: 0 0 20px #ccc;
+        transform: scale(1.01);
+    }
+    @media (max-width: 768px) {
+        width: 10%;
+        height: 10%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        &:hover{
+            box-shadow: none;
+            transform: none;
+        }
+    }
+}
+
+.navbar:hover{
+    cursor:pointer;
+}
+
+.navbartext{
+    display: flex;   
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f9f7f7;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+}
+
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Make the list items horizontal */
+.navbar li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the spacing between list items as needed */
+}
+
+
+/* Optional: Add some styles to the list items */
+.navbar li {
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* background-color: #f0f0f0; */
+}

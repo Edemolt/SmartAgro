@@ -1,0 +1,25 @@
+.analysis-container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px; /* Optional: Set a maximum width for the container */
+    margin: 0 auto; /* Optional: Center the container horizontally */
+}
+
+.analysis-box {
+    flex: 1;
+    height: 100px;
+    background-color: #f0f0f0;
+    margin: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .analysis-box {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .analysis-box {
+        flex-basis: calc(100% - 10px);
+    }
+}

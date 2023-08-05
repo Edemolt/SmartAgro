@@ -1,0 +1,89 @@
+.BookNowEncloser{
+    font-family: 'Zen Kurenaido';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 60%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+}
+#Details{
+    color: black;
+}
+
+.BookNowEncloser:hover{
+    cursor: pointer;
+}
+
+.CropDetails{
+    /* display: flex; */
+    top: 60%;
+}
+/*  make booking details horizontal with price being in a different row at bottom */
+/* .Booking-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+/* } */
+
+.Booking_details{
+    /* justify-content: center; */
+    display: flex;
+    width: 100%;
+}
+
+.booknowbox{
+    background-color: rgba(255, 255, 255, 0.7);
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.booknowbox:hover{
+    cursor: pointer;
+}
+
+.booknowtext{
+    color: black;
+}
+
+.booknowbox2{
+    position: absolute;
+    display: flex;
+    top : 75%;
+    left: 35%;
+    background-color: rgba(255, 255, 255, 0.7);
+    width : 30%;
+    height: 10%;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.book-now-button2 {
+    position: absolute;
+    bottom: 10%;
+    left : 45%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add margin-top for spacing between the divs and the button */
+}
+
+.book-now-button2 button {
+    /* Optional button styles */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
