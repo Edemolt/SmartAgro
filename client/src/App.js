@@ -10,6 +10,8 @@ import AnalysisPath from './routes/Analysis/Analysis'
 import SignUpPage from './routes/SignUp/signup_path'
 import LoginPage from './routes/Login/login_path'
 import LogoutPath from './routes/Logout/logout_path'
+import Error_path from './routes/Errorpage/errorpage'
+import About from './components/AboutUs/about_component'
 
 
 import './App.css'
@@ -25,6 +27,8 @@ function App(){
       <Route path = '/signup' element={<SignUpPage/>}></Route>
       <Route path = '/login' element={<LoginPage/>}></Route>
       <Route path = '/logout' element={<LogoutPath/>}></Route>
+      <Route path = '/about' element={<About/>}></Route>
+      <Route path = '*' element={<Error_path/>}></Route>
     </Routes>
   )
 }

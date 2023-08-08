@@ -185,4 +185,34 @@ router.get('/signout', (req,res) => {
 router.get('/checkauthentication', authenticate, (req,res) => {
     res.send(req.rootUser);
 });
+
+router.post('/contact',authenticate, async (req,res) => {
+    console.log(`hello from signin`)
+    const {name, email, message} = req.body;
+    console.log(req.body);
+    if(!name || !email || !message){
+        return res.status(422).json({error: "Please fill all the fields"});
+    }
+
+    try{
+        let user = req.rootUser;
+
+        const new_query = {name, email, message};
+
+        user.queries.push(new_query);
+
+        await user.save();
+
+        res.status(201).json({message: "Message sent"});
+
+        await user.save();
+
+    }
+    catch(err){
+        console.log(err);
+    }
+
+})
+
+
 module.exports = router; 

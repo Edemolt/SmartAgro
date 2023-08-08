@@ -1,0 +1,26 @@
+/* Styling for the container div */
+#not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Styling for the content container */
+  .not-found {
+    text-align: center;
+  }
+  
+  /* Styling for the 404 element */
+  .notfound-404 h1 {
+    font-size: 120px;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Styling for the error message */
+  h2 {
+    font-size: 24px;
+    color: #666;
+  }
+  

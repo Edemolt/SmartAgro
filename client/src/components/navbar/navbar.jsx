@@ -17,10 +17,9 @@ function NavBar(){
                 <div className="navabartext">
                 <ul>
                     <li>
-                        <button>About Us</button>
-                    </li>
-                    <li>
-                        <button>Places</button>
+                        <Link to="/about">
+                            <button>About Us</button>
+                        </Link>
                     </li>
                     {/* {isAuthenticated ? <li>
                         <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Log Out
@@ -37,9 +36,15 @@ function NavBar(){
 
                     <li>
                         <button>
-                            <Link to="/book">SignIn</Link>
+                            <Link to="/login">SignIn</Link>
                         </button>
                     </li>
+                    <li>
+                        <button>
+                            <Link to="/signup">SignUp</Link>
+                        </button>
+                    </li>
+
                     <li>
                         <button>
                             <Link to="/logout">LogOut</Link>
