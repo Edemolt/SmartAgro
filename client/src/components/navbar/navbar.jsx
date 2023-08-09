@@ -17,6 +17,12 @@ function NavBar(){
                 <div className="navabartext">
                 <ul>
                     <li>
+                        <Link to="/contact">
+                            <button>Contact Us</button>
+                        </Link>
+                    </li>
+
+                    <li>
                         <Link to="/about">
                             <button>About Us</button>
                         </Link>

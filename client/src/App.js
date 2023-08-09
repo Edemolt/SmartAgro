@@ -12,7 +12,9 @@ import LoginPage from './routes/Login/login_path'
 import LogoutPath from './routes/Logout/logout_path'
 import Error_path from './routes/Errorpage/errorpage'
 import About from './components/AboutUs/about_component'
-
+import ContactUsPath from './routes/ContactUs/Contact_path'
+import HumidityChart from './components/Analysis/humidity/humidity_component'
+import WeatherChart from './components/Analysis/temperature/temp_component'
 
 import './App.css'
 
@@ -27,7 +29,10 @@ function App(){
       <Route path = '/signup' element={<SignUpPage/>}></Route>
       <Route path = '/login' element={<LoginPage/>}></Route>
       <Route path = '/logout' element={<LogoutPath/>}></Route>
-      <Route path = '/about' element={<About/>}></Route>
+      <Route path = '/contact' element={<About/>}></Route>
+      <Route path = '/about' element={<ContactUsPath/>}></Route>
+      <Route path = '/humidityChart' element={<HumidityChart/>}></Route>
+      <Route path = '/tempChart' element={<WeatherChart/>}></Route>
       <Route path = '*' element={<Error_path/>}></Route>
     </Routes>
   )

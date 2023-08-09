@@ -1,25 +1,36 @@
-.analysis-container {
+/* analysis_styles.css */
+.analysis-heading {
+    text-align: center;
+    top: 30%;
+    margin: 150px auto 20px; /* Adjust the top margin for vertical centering */
+  }
+  
+  .listing {
     display: flex;
-    width: 100%;
-    max-width: 1000px; /* Optional: Set a maximum width for the container */
-    margin: 0 auto; /* Optional: Center the container horizontally */
-}
-
-.analysis-box {
-    flex: 1;
-    height: 100px;
-    background-color: #f0f0f0;
-    margin: 5px;
-}
-
-@media screen and (max-width: 600px) {
-    .analysis-box {
-        flex-basis: calc(50% - 10px);
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .analysis-box {
-        flex-basis: calc(100% - 10px);
-    }
-}
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 220px); /* Adjust the height for the charts */
+    max-width: 800px; /* Adjust the max-width value as needed */
+    margin: 0 auto; /* Center the div horizontally *//* Adjust the height for the charts */
+  }
+  
+  .listing ul {
+    list-style: none;
+  }
+  
+  .listing li {
+    margin: 0 20px;
+  }
+  
+  .listing a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .listing a:hover {
+    color: #5555FF;
+  }
+  

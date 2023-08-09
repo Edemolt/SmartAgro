@@ -1,0 +1,26 @@
+/* humidity_styles.css */
+.card {
+    background: linear-gradient(-45deg, #00C9FF, #92FE9D);
+    background-size: 400% 400%;
+    animation: bg 20s infinite;
+    width: 300px;
+    height: 375px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 380px; /* Adjust this value to position it to the right of the temperature chart */
+    transform: translateY(-50%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Other styles remain the same */
+  
+  .legend--this {
+    background-color: #00C9FF;
+  }
+  
+  .legend--prev {
+    background-color: #92FE9D;
+  }
+  
